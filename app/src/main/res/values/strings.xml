@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string-array name="method">
+        <item>Equal</item>
+        <item>Percentage</item>
+        <item>Amount</item>
+    </string-array>
+
+</resources>

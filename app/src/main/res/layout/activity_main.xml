@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellowt"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="420dp"
+        android:layout_height="738dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="-4dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Split The Bill"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:fontFamily="@font/simonetta_black_italic"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:layout_width="309dp"
+            android:layout_height="244dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/mage"
+
+
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/reset_btn"
+            android:fontFamily="@font/simonetta_black_italic"
+            android:text="To Calculator"
+            android:textSize="18dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</RelativeLayout>

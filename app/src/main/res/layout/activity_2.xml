@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yellowt"
+        tools:context=".Activity2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSltDate"
+                android:layout_width="158dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/pink"
+                android:gravity="left"
+                android:text="Select Date:"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/simonetta_black_italic"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="204dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:hint=" _  / _  / _"
+                android:textColor="@color/grey"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="158dp"
+                    android:layout_height="44dp"
+                    android:gravity="left"
+                    android:text="Total Amount:"
+                    android:background="@color/pink"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/simonetta_black_italic" />
+
+                <EditText
+                    android:id="@+id/etvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:textColor="@color/grey" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPeople"
+                        android:background="@color/pink"
+
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Number of People:"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/simonetta_black_italic" />
+
+                    <EditText
+                        android:id="@+id/etvPeople"
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:textColor="@color/grey" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnGroup"
+                android:layout_width="300dp"
+                android:layout_height="34dp"
+                android:layout_gravity="right"
+                android:fontFamily="@font/simonetta_black_italic"
+                android:background="@color/pink"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/llIndividualPercentages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnShowPercentages"
+                android:layout_width="111dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:fontFamily="@font/simonetta_black_italic"
+                android:text="Proceed"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/simonetta_black_italic"
+                android:background="@drawable/calculate_btn"
+                android:text="Calculate"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="118dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/simonetta_black_italic"
+                android:background="@drawable/reset_btn"
+                android:text="Reset" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/simonetta_italic"
+                android:gravity="center"
+                android:text="Total Amount:"
+
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/tvIdv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/simonetta_italic"
+                android:gravity="center"
+                android:text="Individual Amount:"
+                android:textColor="@color/orange" />
+
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
